@@ -19,5 +19,8 @@ class NameList:
 
 if __name__ == '__main__':
     name_list = NameList()
-    for idx in range(6):
-        print(name_list.take_name(idx))
+    try:
+        for idx in range(6):
+            print(name_list.take_name(idx))
+    except IndexError as idx_err:
+        print(idx_err)
