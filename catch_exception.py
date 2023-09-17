@@ -17,10 +17,14 @@ class NameList:
         return self._name_list[index]
 
 
-if __name__ == '__main__':
+def main():
     name_list = NameList()
     try:
         for idx in range(6):
             print(name_list.take_name(idx))
     except IndexError as idx_err:
         print(idx_err)
+
+
+if __name__ == '__main__':
+    main()
