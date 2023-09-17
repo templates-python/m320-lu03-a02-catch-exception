@@ -17,7 +17,10 @@ class NameList:
         return self._name_list[index]
 
 
-if __name__ == '__main__':
+def main():
     name_list = NameList()
     for idx in range(6):
         print(name_list.take_name(idx))
+
+if __name__ == '__main__':
+    main()
